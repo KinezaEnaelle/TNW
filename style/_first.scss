@@ -9,10 +9,11 @@
 .first-container {
   position: relative;
   text-align: left;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/gender-pay-gap.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/gender-pay-gap.png");
   background-size: cover;
-//   opacity: .9;
-//   background-color: rgba(0,0,0,0.5);
+  //   opacity: .9;
+  //   background-color: rgba(0,0,0,0.5);
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -30,36 +31,36 @@
     left: 5px;
   }
 }
-.first-container-item{
-    display: flex;
-    // justify-content: space-around;
+.first-container-item {
+  display: flex;
+  // justify-content: space-around;
 
-.item1{
+  .item1 {
     display: block;
     font-size: 15px;
     color: lightgray;
     font-weight: bold;
 
-.item2{
-    display: block;
-    font-size: 55px;
-    color: lightgray;
-    font-weight: bold;
-    // background-color: pink;
+    .item2 {
+      display: block;
+      font-size: 55px;
+      color: lightgray;
+      font-weight: bold;
+      // background-color: pink;
+    }
+  }
 }
+.second-container {
+  display: block;
+  background-image: url("../images/tnw.jpg");
+  background-size: cover;
+  width: 490px;
+  height: 277px;
 }
-}
-.second-container{
-    display: block;
-    background-image:  url('../images/tnw.jpg');
-    background-size: cover;
-    width: 490px;
-    height: 277px;
-}
-.third-container{
-    display: block;
-    background-image: url('../images/lock.jpg');
-    background-size: cover;
-    width: 490px;
-    height: 277px;
+.third-container {
+  display: block;
+  background-image: url("../images/lock.jpg");
+  background-size: cover;
+  width: 490px;
+  height: 277px;
 }
