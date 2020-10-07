@@ -159,6 +159,14 @@ header .navigation .navbar-right {
   display: block;
   background-image: url("../images/tnw.jpg");
   background-size: cover;
+  width: 490px;
+  height: 277px;
+}
+
+.second-container {
+  display: block;
+  background-image: url("../images/tnw.jpg");
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
