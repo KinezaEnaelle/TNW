@@ -1,9 +1,87 @@
-@import url(/home/igor/Microverse/TNW/style/reset.css);
-@import url(/home/igor/Microverse/TNW/style/header.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(reset.css);
 body {
   width: 100%;
   font-size: 14px;
   line-height: 1.5;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+header .navigation {
+  width: 100%;
+  display: block;
+  background: #131313;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  padding: 5px 0 5px 20px;
+}
+
+header .navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navigation .navbarlink {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+header .navigation .navbar-left {
+  float: left;
+}
+
+header .navigation .navbar-right {
+  float: right;
+}
+
+.stickyheader {
+  width: 100%;
+  display: block;
+  background: white;
+  height: 50px;
+  padding: 15px 15px 5px 20px;
+  border-bottom: 2px solid #ebe2e2;
+  position: fixed;
+  top: 30px;
+}
+
+.stickyheader ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stickyheader .stickylink {
+  color: #afa5a5;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.stickyheader .stickylink:hover {
+  color: black;
+}
+
+.stickyheader .stickyleft {
+  float: left;
+}
+
+.stickyheader .stickyright {
+  float: right;
+  color: lightgrey;
+  margin-top: 3px;
+}
+
+.stickyheader .stickyright:hover {
+  color: gray;
 }
 /*# sourceMappingURL=main.css.map */
