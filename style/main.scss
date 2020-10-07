@@ -1,4 +1,13 @@
-@import '../style/reset.css';
-@import '../style/header.css';
+@import 'reset.css';
+@import 'header.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+} 
+
+
 
 

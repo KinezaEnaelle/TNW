@@ -1,3 +1,9 @@
 @import url(/home/igor/Microverse/TNW/style/reset.css);
 @import url(/home/igor/Microverse/TNW/style/header.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=main.css.map */

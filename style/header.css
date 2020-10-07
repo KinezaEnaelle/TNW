@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=header.css.map */
+header {
+  width: 100%;
+}
+
+header .navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 23px;
+  color: #ffffff;
+  background: #131313;
+}
+/*# sourceMappingURL=header.css.map */
