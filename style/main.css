@@ -7,6 +7,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
+  font-family: 'Roboto', serif;
 }
 
 header {
@@ -98,12 +99,12 @@ header .navigation .navbar-right {
   height: 540px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.33% 33.33% 33.33%;
-      grid-template-columns: 33.33% 33.33% 33.33%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  gap: 10px;
-  margin: 1%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 7px;
+  margin: 5px;
 }
 
 .first-container {
@@ -129,14 +130,29 @@ header .navigation .navbar-right {
   height: 100%;
 }
 
+.first-container .logo {
+  width: 420px;
+  height: 100px;
+  margin: 20px 0 0 20px;
+}
+
 .first-container p {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
-  bottom: 30px;
-  left: 5px;
+  bottom: 50px;
+  left: 20px;
+}
+
+.firstitemdate {
+  color: aliceblue;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-family: 'Roboto', serif;
 }
 
 .first-container-item {
@@ -144,8 +160,10 @@ header .navigation .navbar-right {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  left: 5px;
-  bottom: 5px;
+  left: 20px;
+  bottom: 10px;
+  font-family: "Roboto", serif;
+  color: white;
 }
 
 .first-container-item .item1 {
@@ -153,6 +171,7 @@ header .navigation .navbar-right {
   font-size: 15px;
   color: lightgray;
   font-weight: bold;
+  padding-right: 10px;
 }
 
 .first-container-item .item1 .item2 {
@@ -160,30 +179,58 @@ header .navigation .navbar-right {
   font-size: 55px;
   color: lightgray;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .second-container {
   display: block;
-  background-image: url("../images/tnw.jpg");
-  background-size: cover;
-  width: 490px;
-  height: 277px;
-}
-
-.second-container {
-  display: block;
+  position: relative;
   background-image: url("../images/tnw.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.second-container p {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 .third-container {
   display: block;
   background-image: url("../images/lock.jpg");
   background-size: cover;
+  position: relative;
   width: 100%;
   height: 100%;
+}
+
+.third-container p {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 35px;
+  left: 15px;
+}
+
+.third-container .spanbottom {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-size: 15px;
+}
+
+.third-container span {
+  display: inline-block;
+  padding-left: 10px;
 }
 
 .fingerprint {
@@ -229,5 +276,22 @@ header .navigation .navbar-right {
 .invalid .iconify {
   width: 28px;
   height: 30px;
+}
+
+.newsgrid {
+  width: 100%;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 2%;
+}
+
+.newsgrid img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
