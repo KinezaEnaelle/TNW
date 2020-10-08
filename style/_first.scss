@@ -1,11 +1,11 @@
 .container {
-  width: 100%;
+  width: 99%;
   height: 540px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 7px;
-  margin: 5px;
+  margin: 5px auto 5px auto;
 }
 
 .first-container {

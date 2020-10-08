@@ -1,13 +1,36 @@
 .newsgrid {
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2%;
+  width: 93%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2%;
+  margin: 1% auto 0 auto;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+  a {
+      display: inline-block;
+      color: black;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 1% 0 1% 0;
+  }
+
+  small {
+      font-size: 13px;
+      color: grey;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.newslate-link {
+  width: 93%;
+  display: block;
+  color: #ff4422;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 2% auto 2% auto;
 }
