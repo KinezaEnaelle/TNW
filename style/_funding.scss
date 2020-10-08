@@ -109,12 +109,12 @@
       gap: 5px;
 
       li {
-      border-right: 1px solid #f42;
-      &:last-child {
-        border-right: none;
+        border-right: 1px solid #f42;
+        &:last-child {
+          border-right: none;
+        }
       }
-    }
-    
+
       .funding-link-right {
         color: #f42;
         display: inline-block;
