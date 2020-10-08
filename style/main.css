@@ -16,46 +16,6 @@ body {
   display: none;
 }
 
-header {
-  width: 100%;
-}
-
-header .navigation {
-  width: 100%;
-  display: block;
-  background: #131313;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 33px;
-  padding: 5px 0 5px 20px;
-}
-
-header .navigation ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .navigation .navbarlink {
-  color: #928989;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-header .navigation .navbarlink:hover {
-  color: white;
-}
-
-header .navigation .navbar-left {
-  float: left;
-}
-
-header .navigation .navbar-right {
-  float: right;
-}
-
 .stickyheader {
   width: 100%;
   display: block;
@@ -103,6 +63,46 @@ header .navigation .navbar-right {
 
 .stickyheader .stickyright:hover {
   color: gray;
+}
+
+header {
+  width: 100%;
+}
+
+header .navigation {
+  width: 100%;
+  display: block;
+  background: #131313;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  padding: 5px 0 5px 20px;
+}
+
+header .navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navigation .navbarlink {
+  color: #928989;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+header .navigation .navbarlink:hover {
+  color: white;
+}
+
+header .navigation .navbar-left {
+  float: left;
+}
+
+header .navigation .navbar-right {
+  float: right;
 }
 
 .zover {
@@ -329,7 +329,7 @@ header .navigation .navbar-right {
 .newslate-link {
   width: 93%;
   display: block;
-  color: #ff4422;
+  color: #f42;
   font-size: 20px;
   font-weight: 700;
   margin: 2% auto 2% auto;
@@ -374,7 +374,7 @@ header .navigation .navbar-right {
           align-items: center;
   height: 40px;
   width: 100%;
-  background: #ff4422;
+  background: #f42;
   padding-left: 80px;
   color: white;
   font-size: 18px;
@@ -630,7 +630,7 @@ small {
 }
 
 .footer-top {
-  background: #131313;
+  background-color: #131313;
   height: 169px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,7 +700,7 @@ small {
 }
 
 .footer-bottom {
-  background: #000000;
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,6 +863,96 @@ small {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar-left {
+    margin-left: 120px;
+  }
+  .fixed-min-logo {
+    display: block;
+    position: fixed;
+    width: 125px;
+    height: 80px;
+    background: black;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .fixed-min-logo p {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+  .fixed-min-logo .header-logo-fixed {
+    width: 90px;
+    height: 70px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .stickyheader .disappear {
+    display: none;
+  }
+  .stickyheader .stickyleft {
+    display: block;
+    padding-left: 120px;
+  }
+  .container {
+    height: 350px;
+  }
+  .container .logo {
+    display: none;
+  }
+  .container p {
+    font-size: 20px;
+  }
+  .newsgrid {
+    height: 700px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: 1% auto 0 auto;
+  }
+  .funding-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .funding-grid {
+    height: 250px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 1%;
+  }
+  .funding-grid .funding-item:last-child {
+    display: none;
+  }
+  .hard-fork {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    height: 2800px;
+  }
+  .hard-fork .fork-item-list ul li {
+    list-style-type: circle;
+  }
+  .latest-deals {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    height: 1050px;
   }
 }
 /*# sourceMappingURL=main.css.map */

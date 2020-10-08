@@ -12,42 +12,6 @@ body {
   display: none;
 }
 
-header {
-  width: 100%;
-
-  .navigation {
-    width: 100%;
-    display: block;
-    background: #131313;
-    align-items: center;
-    height: 33px;
-    padding: 5px 0 5px 20px;
-
-    ul {
-      list-style-type: none;
-      display: flex;
-    }
-
-    .navbarlink {
-      color: #928989;
-      text-decoration: none;
-      margin-right: 15px;
-
-      &:hover {
-        color: white;
-      }
-    }
-
-    .navbar-left {
-      float: left;
-    }
-
-    .navbar-right {
-      float: right;
-    }
-  }
-}
-
 .stickyheader {
   width: 100%;
   display: block;
@@ -90,6 +54,42 @@ header {
 
     &:hover {
       color: gray;
+    }
+  }
+}
+
+header {
+  width: 100%;
+
+  .navigation {
+    width: 100%;
+    display: block;
+    background: #131313;
+    align-items: center;
+    height: 33px;
+    padding: 5px 0 5px 20px;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .navbarlink {
+      color: #928989;
+      text-decoration: none;
+      margin-right: 15px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .navbar-left {
+      float: left;
+    }
+
+    .navbar-right {
+      float: right;
     }
   }
 }

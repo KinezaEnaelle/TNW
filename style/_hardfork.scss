@@ -34,6 +34,7 @@
     font-size: 20px;
     font-weight: 700;
   }
+
   small {
     color: gray;
   }
@@ -47,12 +48,14 @@
 
 .fork-middle-left {
   padding-left: 15px;
+
   p {
     display: block;
     font-weight: 500;
     font-size: 15px;
     color: #fc806a;
   }
+
   a {
     color: #f42;
     font-size: 10px;
@@ -72,8 +75,10 @@
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .fork-item-list a {
   color: grey;
+
   &:hover {
     color: black;
   }

@@ -4,7 +4,7 @@
   }
 
   .fixed-min-logo {
-      display: block;
+    display: block;
     position: fixed;
     width: 125px;
     height: 90px;
@@ -30,9 +30,9 @@
   }
 
   .stickyheader {
-      .disappear {
-          display: block;
-      }
+    .disappear {
+      display: block;
+    }
 
     .stickyleft {
       display: none;
@@ -112,33 +112,33 @@
     gap: 1%;
   }
 
-.hard-fork {
-grid-template-columns: 1fr;
-grid-template-rows: repeat(9, 1fr);
-height: 4300px;
+  .hard-fork {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    height: 4300px;
 
-.fork-item-list {
-    ul li {
+    .fork-item-list {
+      ul li {
         list-style-type: circle;
+      }
     }
-}
-}
+  }
 
-.latest-deals {
-grid-template-columns: 1fr;
-grid-template-rows: repeat(8, 1fr);
-height: 1500px;
+  .latest-deals {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 1500px;
 
-.deals-img {
-    width: 90px;
-    height: 90px;
-    display: flex;
-    margin-right: 10px;
-}
+    .deals-img {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      margin-right: 10px;
+    }
 
-.deals-image {
-    padding-top: 20px;
-    display: flex;
-}
-}
+    .deals-image {
+      padding-top: 20px;
+      display: flex;
+    }
+  }
 }
