@@ -5,7 +5,7 @@
 body {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -586,8 +586,8 @@ header .navigation .navbar-right {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   width: 93%;
-  height: 600px;
-  margin: 1% auto 0 auto;
+  height: 700px;
+  margin: 1% auto 1% auto;
   gap: 2%;
 }
 
@@ -603,8 +603,8 @@ header .navigation .navbar-right {
 }
 
 .deals-img {
-  width: 278px;
-  height: 216px;
+  width: 100%;
+  height: auto;
 }
 
 .deals-image a {
@@ -616,5 +616,102 @@ header .navigation .navbar-right {
 small {
   color: gray;
   font-weight: bold;
+}
+
+.footer-top {
+  background: #131313;
+  height: 169px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  color: white;
+  background: #4c4b4b;
+}
+
+.social-links:hover {
+  color: black;
+}
+
+.social-links .iconify {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin-right: 20px;
+  color: gray;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.footer-bottom p {
+  color: gray;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 46px;
+  height: 17px;
+  color: white;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=main.css.map */

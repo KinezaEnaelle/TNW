@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 93%;
-  height: 600px;
-  margin: 1% auto 0 auto;
+  height: 700px;
+  margin: 1% auto 1% auto;
   gap: 2%;
 }
 
@@ -19,8 +19,8 @@
   }
 }
 .deals-img {
-  width: 278px;
-  height: 216px;
+  width: 100%;
+  height: auto;
 }
 
 .deals-image a {
