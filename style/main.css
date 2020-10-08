@@ -333,7 +333,8 @@ header .navigation .navbar-right {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   gap: 2%;
-  margin: 1% auto 0 auto;
+  margin: 1% auto 1% auto;
+  clear: both;
 }
 
 .funding-item {
@@ -428,5 +429,43 @@ header .navigation .navbar-right {
 
 .funding-item .funding-item-bottom small {
   color: #aaa;
+}
+
+.funding-nav {
+  width: 93%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.funding-nav .funding-nav-left {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.funding-nav .funding-nav-left .funding-link-left {
+  color: #f42;
+}
+
+.funding-nav .funding-nav-right {
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.funding-nav .funding-nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.funding-nav .funding-nav-right ul .funding-link-right {
+  color: #f42;
+  display: inline-block;
+  border-right: 1px solid #f42;
+  padding-right: 3px;
 }
 /*# sourceMappingURL=main.css.map */

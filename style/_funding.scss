@@ -6,7 +6,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 2%;
-  margin: 1% auto 0 auto;
+  margin: 1% auto 1% auto;
+  clear: both;
 }
 
 .funding-item {
@@ -78,6 +79,44 @@
 
     small {
       color: #aaa;
+    }
+  }
+}
+.funding-nav {
+  width: 93%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  padding-bottom: 25px;
+
+  .funding-nav-left {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+
+    .funding-link-left {
+      color: #f42;
+    }
+  }
+
+  .funding-nav-right {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+
+    ul {
+      display: flex;
+      gap: 5px;
+
+      .funding-link-right {
+        color: #f42;
+        display: inline-block;
+        border-right: 1px solid #f42;
+        padding-right: 3px;
+        // &:last-child{
+        //   border-right: none;
+        // }
+      }
     }
   }
 }
