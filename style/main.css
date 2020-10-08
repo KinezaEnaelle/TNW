@@ -12,6 +12,10 @@ body {
   font-family: "Roboto", serif;
 }
 
+.fixed-min-logo {
+  display: none;
+}
+
 header {
   width: 100%;
 }
@@ -63,6 +67,10 @@ header .navigation .navbar-right {
   position: sticky;
   top: 0;
   z-index: 8;
+}
+
+.stickyheader .disappear {
+  display: none;
 }
 
 .stickyheader ul {
@@ -718,11 +726,12 @@ small {
   margin-right: 5px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   header .navigation {
     display: none;
   }
   .fixed-min-logo {
+    display: block;
     position: fixed;
     width: 125px;
     height: 90px;
@@ -743,6 +752,9 @@ small {
     height: 70px;
     margin-left: 15px;
     margin-top: 15px;
+  }
+  .stickyheader .disappear {
+    display: block;
   }
   .stickyheader .stickyleft {
     display: none;
@@ -794,6 +806,63 @@ small {
     width: 70px;
     height: 70px;
     margin-right: 15px;
+  }
+  .funding-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .funding-nav .funding-nav-right ul {
+    display: block;
+  }
+  .funding-nav .funding-nav-right ul li {
+    border: none;
+  }
+  .funding-nav .funding-nav-right ul .funding-link-right {
+    padding-top: 10px;
+  }
+  .funding-grid {
+    height: 1000px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+  }
+  .hard-fork {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+    height: 4300px;
+  }
+  .hard-fork .fork-item-list ul li {
+    list-style-type: circle;
+  }
+  .latest-deals {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+    height: 1500px;
+  }
+  .latest-deals .deals-img {
+    width: 90px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  .latest-deals .deals-image {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
