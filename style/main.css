@@ -478,8 +478,8 @@ header .navigation .navbar-right {
       grid-template-rows: 1fr 1fr 1fr;
   height: 2100px;
   width: 93%;
-  margin: 1% auto 1% auto;
-  position: relative;
+  margin: 1% auto 0 auto;
+  gap: 10px;
 }
 
 .hard-fork-item {
@@ -499,11 +499,12 @@ header .navigation .navbar-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: beige;
+  color: white;
   position: relative;
   width: 100%;
   height: 200px;
-  background: url("../images/stonkark.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/bitcoinmast.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bitcoinmast.jpg");
   background-size: cover;
 }
 
@@ -516,6 +517,10 @@ header .navigation .navbar-right {
   font-weight: 700;
 }
 
+.hard-fork-img small {
+  color: gray;
+}
+
 .fork-item-middle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,7 +528,7 @@ header .navigation .navbar-right {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #dfbfbf;
+  background: #fff4f2;
 }
 
 .fork-middle-left {
@@ -534,6 +539,13 @@ header .navigation .navbar-right {
   display: block;
   font-weight: 500;
   font-size: 15px;
+  color: #fc806a;
+}
+
+.fork-middle-left a {
+  color: #f42;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .lower-image {
@@ -547,5 +559,53 @@ header .navigation .navbar-right {
   color: #ff4422;
   font-weight: 700;
   padding-bottom: 10px;
+}
+
+.fork-item-list a {
+  color: grey;
+}
+
+.fork-item-list a:hover {
+  color: black;
+}
+
+.latest-deals {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 93%;
+  height: 600px;
+  margin: 1% auto 0 auto;
+  gap: 2%;
+}
+
+.deals-item {
+  width: 100%;
+  height: auto;
+}
+
+.deals-item a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f42;
+}
+
+.deals-img {
+  width: 278px;
+  height: 216px;
+}
+
+.deals-image a {
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+small {
+  color: gray;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

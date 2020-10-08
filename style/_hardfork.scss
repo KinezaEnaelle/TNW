@@ -4,8 +4,8 @@
   grid-template-rows: 1fr 1fr 1fr;
   height: 2100px;
   width: 93%;
-  margin: 1% auto 1% auto;
-  position: relative;
+  margin: 1% auto 0 auto;
+  gap: 10px;
 }
 
 .hard-fork-item {
@@ -18,27 +18,31 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: beige;
+  color: white;
   position: relative;
   width: 100%;
   height: 200px;
-  background: url('../images/stonkark.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/bitcoinmast.jpg");
   background-size: cover;
 
-h1 {
-  font-weight: 700;
-}
+  h1 {
+    font-weight: 700;
+  }
 
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  small {
+    color: gray;
+  }
 }
 
 .fork-item-middle {
   display: flex;
   justify-content: space-between;
-  background: rgb(223, 191, 191);
+  background: rgb(255, 244, 242);
 }
 
 .fork-middle-left {
@@ -47,6 +51,12 @@ h2 {
     display: block;
     font-weight: 500;
     font-size: 15px;
+    color: #fc806a;
+  }
+  a {
+    color: #f42;
+    font-size: 10px;
+    font-weight: bold;
   }
 }
 
@@ -62,5 +72,9 @@ h2 {
   font-weight: 700;
   padding-bottom: 10px;
 }
-
-
+.fork-item-list a {
+  color: grey;
+  &:hover {
+    color: black;
+  }
+}

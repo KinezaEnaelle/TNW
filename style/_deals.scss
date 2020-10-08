@@ -1,0 +1,34 @@
+.latest-deals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 93%;
+  height: 600px;
+  margin: 1% auto 0 auto;
+  gap: 2%;
+}
+
+.deals-item {
+  width: 100%;
+  height: auto;
+
+  a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f42;
+  }
+}
+.deals-img {
+  width: 278px;
+  height: 216px;
+}
+
+.deals-image a {
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+small {
+  color: gray;
+  font-weight: bold;
+}
