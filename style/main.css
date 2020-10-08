@@ -3,11 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url(reset.css);
 body {
+  position: relative;
   width: 100%;
+  height: auto;
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
 }
 
 header {
@@ -60,7 +62,7 @@ header .navigation .navbar-right {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 7;
+  z-index: 8;
 }
 
 .stickyheader ul {
@@ -462,10 +464,17 @@ header .navigation .navbar-right {
   gap: 5px;
 }
 
+.funding-nav .funding-nav-right ul li {
+  border-right: 1px solid #f42;
+}
+
+.funding-nav .funding-nav-right ul li:last-child {
+  border-right: none;
+}
+
 .funding-nav .funding-nav-right ul .funding-link-right {
   color: #f42;
   display: inline-block;
-  border-right: 1px solid #f42;
   padding-right: 3px;
 }
 

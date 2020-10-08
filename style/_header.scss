@@ -1,10 +1,12 @@
 body {
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.5;
-    overflow-x: hidden;
-    font-family: 'Roboto', serif;
-} 
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+}
 
 header {
   width: 100%;
@@ -23,64 +25,64 @@ header {
     }
 
     .navbarlink {
-        color: #928989;
-        text-decoration: none;
-        margin-right: 15px;
+      color: #928989;
+      text-decoration: none;
+      margin-right: 15px;
 
-        &:hover {
-          color: white;
-        }
+      &:hover {
+        color: white;
       }
+    }
 
     .navbar-left {
       float: left;
-}
+    }
 
     .navbar-right {
-        float: right;
+      float: right;
     }
   }
 }
 
 .stickyheader {
-    width: 100%;
-    display: block;
-    background: white;
-    height: 50px;
-    padding: 15px 15px 5px 20px;
-    border-bottom: 2px solid rgb(235, 226, 226);
-    position: sticky;
-    top: 0;
-    z-index: 7;
+  width: 100%;
+  display: block;
+  background: white;
+  height: 50px;
+  padding: 15px 15px 5px 20px;
+  border-bottom: 2px solid rgb(235, 226, 226);
+  position: sticky;
+  top: 0;
+  z-index: 8;
 
-    ul {
-        list-style-type: none;
-        display: flex;
-      }
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
 
-      .stickylink {
-        color: #afa5a5;
-        text-decoration: none;
-        margin-right: 15px;
+  .stickylink {
+    color: #afa5a5;
+    text-decoration: none;
+    margin-right: 15px;
 
-        &:hover {
-            color: black;
-        }
-      }
+    &:hover {
+      color: black;
+    }
+  }
 
-      .stickyleft {
-          float: left;
-      }
+  .stickyleft {
+    float: left;
+  }
 
-      .stickyright {
-          float: right;
-          color: lightgrey;
-          margin-top: 3px;
+  .stickyright {
+    float: right;
+    color: lightgrey;
+    margin-top: 3px;
 
-&:hover {
-    color: gray;
-}
-      }
+    &:hover {
+      color: gray;
+    }
+  }
 }
 
 .zover {
