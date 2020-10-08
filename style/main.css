@@ -5,7 +5,7 @@
 body {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -90,6 +90,7 @@ header .navigation .navbar-right {
   float: right;
   color: lightgrey;
   margin-top: 3px;
+  margin-left: 20px;
 }
 
 .stickyheader .stickyright:hover {
@@ -713,5 +714,55 @@ small {
   height: 17px;
   color: white;
   margin-right: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header .navigation {
+    display: none;
+  }
+  .fixed-min-logo {
+    position: fixed;
+    width: 125px;
+    height: 90px;
+    background: black;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .fixed-min-logo p {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+  .fixed-min-logo .header-logo-fixed {
+    width: 90px;
+    height: 70px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .stickyheader .stickyleft {
+    display: none;
+  }
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px;
+    margin: 5px auto 5px auto;
+  }
+  .container .first-container {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .container .first-container .logo {
+    display: none;
+  }
+  .container .first-container p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

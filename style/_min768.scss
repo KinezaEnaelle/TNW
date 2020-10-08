@@ -1,0 +1,54 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header .navigation {
+    display: none;
+  }
+  .fixed-min-logo {
+    position: fixed;
+    width: 125px;
+    height: 90px;
+    background: black;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    p {
+      display: block;
+      color: white;
+      position: absolute;
+      top: 60px;
+      left: 15px;
+    }
+
+    .header-logo-fixed {
+      width: 90px;
+      height: 70px;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+  }
+
+  .stickyheader {
+    .stickyleft {
+      display: none;
+    }
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px;
+    margin: 5px auto 5px auto;
+
+    .first-container {
+      grid-row: 1/2;
+
+      .logo {
+        display: none;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
