@@ -1,0 +1,66 @@
+.hard-fork {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 2100px;
+  width: 93%;
+  margin: 1% auto 1% auto;
+  position: relative;
+}
+
+.hard-fork-item {
+  width: 100%;
+  height: auto;
+}
+
+.hard-fork-img {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: beige;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url('../images/stonkark.jpg');
+  background-size: cover;
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+}
+
+.fork-item-middle {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(223, 191, 191);
+}
+
+.fork-middle-left {
+  padding-left: 15px;
+  p {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+.lower-image {
+  width: 95px;
+  height: 95px;
+}
+
+.hard-fork-head {
+  display: block;
+  font-size: 25px;
+  color: #ff4422;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+

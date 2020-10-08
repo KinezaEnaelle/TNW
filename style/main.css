@@ -468,4 +468,84 @@ header .navigation .navbar-right {
   border-right: 1px solid #f42;
   padding-right: 3px;
 }
+
+.hard-fork {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 2100px;
+  width: 93%;
+  margin: 1% auto 1% auto;
+  position: relative;
+}
+
+.hard-fork-item {
+  width: 100%;
+  height: auto;
+}
+
+.hard-fork-img {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: beige;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url("../images/stonkark.jpg");
+  background-size: cover;
+}
+
+.hard-fork-img h1 {
+  font-weight: 700;
+}
+
+.hard-fork-img h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.fork-item-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #dfbfbf;
+}
+
+.fork-middle-left {
+  padding-left: 15px;
+}
+
+.fork-middle-left p {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.lower-image {
+  width: 95px;
+  height: 95px;
+}
+
+.hard-fork-head {
+  display: block;
+  font-size: 25px;
+  color: #ff4422;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
