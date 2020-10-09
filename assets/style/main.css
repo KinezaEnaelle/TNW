@@ -888,18 +888,12 @@ small {
     height: 70px;
     margin-right: 15px;
   }
-  .funding-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .funding-nav .funding-nav-right ul {
+  .funding-nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .funding-nav .funding-nav-right ul .funding-link-right {
+  .funding-nav-right ul .funding-link-right {
     padding-top: 0;
   }
   .funding-grid {
@@ -909,6 +903,9 @@ small {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 15px;
+  }
+  .funding-nav-right {
+    display: block;
   }
   .funding-nav {
     display: -webkit-box;
@@ -923,9 +920,6 @@ small {
             flex-direction: column;
   }
   .funding-nav-left {
-    display: block;
-  }
-  .funding-nav-right {
     display: block;
   }
   .hard-fork {

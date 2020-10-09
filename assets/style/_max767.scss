@@ -5,6 +5,7 @@
 
   .disappear {
     display: none;
+
     i {
       color: red;
     }
@@ -94,16 +95,12 @@
     }
   }
 
-  .funding-nav {
-    flex-direction: column;
+  .funding-nav-right {
+    ul {
+      display: flex;
 
-    .funding-nav-right {
-      ul {
-        display: flex;
-
-        .funding-link-right {
-          padding-top: 0;
-        }
+      .funding-link-right {
+        padding-top: 0;
       }
     }
   }
@@ -115,6 +112,10 @@
     gap: 15px;
   }
 
+  .funding-nav-right {
+    display: block;
+  }
+
   .funding-nav {
     display: flex;
     justify-content: space-between;
@@ -124,9 +125,8 @@
   .funding-nav-left {
     display: block;
   }
-  .funding-nav-right {
-    display: block;
-  }
+
+  
   .hard-fork {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
