@@ -1,6 +1,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar-left {
     margin-left: 120px;
+    font-size: 14px;
   }
 
   .fixed-min-logo {
@@ -53,7 +54,7 @@
   }
 
   .newsgrid {
-    height: 700px;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 1% auto 0 auto;
@@ -65,10 +66,8 @@
   }
 
   .funding-grid {
-    height: 250px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1%;
 
     .funding-item {
       &:last-child {
@@ -80,18 +79,12 @@
   .hard-fork {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
-    height: 2900px;
-
-    .fork-item-list {
-      ul li {
-        list-style-type: circle;
-      }
-    }
+    height: auto;
   }
 
   .latest-deals {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 1050px;
+    height: auto;
   }
 }

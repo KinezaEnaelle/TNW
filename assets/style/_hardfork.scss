@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 2100px;
   width: 93%;
   margin: 1% auto 0 auto;
-  gap: 10px;
+  gap: 20px;
+  height: auto;
 }
 
 .hard-fork-item {
@@ -21,7 +21,8 @@
   color: white;
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
+  margin-bottom: 2px;
 
   h1 {
     font-weight: 700;
@@ -38,64 +39,55 @@
 }
 
 .bgr1 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/bitcoinmast.jpg");
   background-size: cover;
 }
 
 .bgr2 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/trump.png");
   background-size: cover;
 }
 
 .bgr3 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/table_lamp_200w_in-2-368x276.jpg");
   background-size: cover;
 }
 
 .bgr4 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/Snag_1385ac7a-368x276.png");
   background-size: cover;
 }
 
 .bgr5 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/Luca-car-hed.jpg");
   background-size: cover;
 }
 
 .bgr6 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/IG-Reels-Audio.jpg");
   background-size: cover;
 }
 
 .bgr7 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/data.jpg");
   background-size: cover;
 }
 
 .bgr8 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/company-culture-gq.png");
   background-size: cover;
 }
 
 .bgr9 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/chinese.jpg");
   background-size: cover;
 }
@@ -112,13 +104,13 @@
   p {
     display: block;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     color: #fc806a;
   }
 
   a {
     color: #f42;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: bold;
   }
 }
@@ -141,5 +133,22 @@
 
   &:hover {
     color: black;
+  }
+}
+
+.fork-item-list {
+  padding-left: 1%;
+
+  li {
+    border-bottom: 1px solid rgb(235, 222, 222);
+    padding: 15px;
+  }
+
+  li::before {
+    content: "•";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 }

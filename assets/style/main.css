@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -297,14 +298,14 @@ header .navigation .navbar-right {
 
 .newsgrid {
   width: 93%;
-  height: 500px;
+  height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  gap: 2%;
+  gap: 15px;
   margin: 1% auto 0 auto;
 }
 
@@ -338,14 +339,14 @@ header .navigation .navbar-right {
 .funding-grid {
   position: relative;
   width: 93%;
-  height: 265px;
+  height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 2%;
+  gap: 15px;
   margin: 1% auto 1% auto;
   clear: both;
 }
@@ -448,7 +449,7 @@ header .navigation .navbar-right {
   width: 93%;
   margin: 0 auto;
   display: block;
-  margin-top: 25px;
+  margin-top: 1%;
   padding-bottom: 25px;
 }
 
@@ -496,10 +497,10 @@ header .navigation .navbar-right {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  height: 2100px;
   width: 93%;
   margin: 1% auto 0 auto;
-  gap: 10px;
+  gap: 20px;
+  height: auto;
 }
 
 .hard-fork-item {
@@ -522,7 +523,8 @@ header .navigation .navbar-right {
   color: white;
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
+  margin-bottom: 2px;
 }
 
 .hard-fork-img h1 {
@@ -609,13 +611,13 @@ header .navigation .navbar-right {
 .fork-middle-left p {
   display: block;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   color: #fc806a;
 }
 
 .fork-middle-left a {
   color: #f42;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -638,6 +640,23 @@ header .navigation .navbar-right {
 
 .fork-item-list a:hover {
   color: black;
+}
+
+.fork-item-list {
+  padding-left: 1%;
+}
+
+.fork-item-list li {
+  border-bottom: 1px solid #ebdede;
+  padding: 15px;
+}
+
+.fork-item-list li::before {
+  content: "•";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .latest-deals {
@@ -776,24 +795,33 @@ small {
   height: 17px;
   color: white;
   margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 0) and (max-width: 767px) {
   header .navigation {
     display: none;
   }
+  .disappear {
+    display: none;
+  }
+  .disappear i {
+    color: red;
+  }
   .fixed-min-logo {
     display: block;
     position: fixed;
     width: 100px;
-    height: 80px;
+    height: 50px;
     background: black;
     top: 0;
     left: 0;
     z-index: 99;
   }
   .fixed-min-logo p {
-    display: block;
+    display: none;
     color: white;
     position: absolute;
     top: 50px;
@@ -801,10 +829,10 @@ small {
     font-size: 10px;
   }
   .fixed-min-logo .header-logo-fixed {
-    width: 75px;
-    height: 70px;
+    width: 70px;
+    height: 65px;
     margin-left: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .stickyheader .disappear {
     display: block;
@@ -813,7 +841,7 @@ small {
     display: none;
   }
   .container {
-    height: 700px;
+    height: 800px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -839,7 +867,7 @@ small {
   }
   .newsgrid {
     width: 93%;
-    height: 700px;
+    height: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -875,29 +903,32 @@ small {
     padding-top: 0;
   }
   .funding-grid {
-    height: 1000px;
+    height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1%;
+    gap: 15px;
   }
   .hard-fork {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[9];
         grid-template-rows: repeat(9, 1fr);
-    height: 4800px;
+    height: auto;
   }
   .hard-fork .fork-item-list ul li {
-    list-style-type: circle;
+    list-style-type: none;
+  }
+  .hard-fork-img {
+    height: 500px;
   }
   .latest-deals {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
-    height: 1500px;
+    height: auto;
   }
   .latest-deals .deals-img {
     width: 90px;
@@ -918,6 +949,7 @@ small {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar-left {
     margin-left: 120px;
+    font-size: 14px;
   }
   .fixed-min-logo {
     display: block;
@@ -959,7 +991,7 @@ small {
     font-size: 20px;
   }
   .newsgrid {
-    height: 700px;
+    height: auto;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -973,12 +1005,10 @@ small {
             flex-direction: column;
   }
   .funding-grid {
-    height: 250px;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    gap: 1%;
   }
   .funding-grid .funding-item:last-child {
     display: none;
@@ -988,17 +1018,14 @@ small {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
-    height: 2900px;
-  }
-  .hard-fork .fork-item-list ul li {
-    list-style-type: circle;
+    height: auto;
   }
   .latest-deals {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    height: 1050px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,18 +3,25 @@
     display: none;
   }
 
+  .disappear {
+    display: none;
+    i {
+    color: red;
+  }
+  }
+
   .fixed-min-logo {
     display: block;
     position: fixed;
     width: 100px;
-    height: 80px;
+    height: 50px;
     background: black;
     top: 0;
     left: 0;
     z-index: 99;
 
     p {
-      display: block;
+      display: none;
       color: white;
       position: absolute;
       top: 50px;
@@ -23,10 +30,10 @@
     }
 
     .header-logo-fixed {
-      width: 75px;
-      height: 70px;
+      width: 70px;
+      height: 65px;
       margin-left: 15px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 
@@ -41,7 +48,7 @@
   }
 
   .container {
-    height: 700px;
+    height: 800px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
@@ -68,7 +75,7 @@
 
   .newsgrid {
     width: 93%;
-    height: 700px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -107,28 +114,32 @@
   }
 
   .funding-grid {
-    height: 1000px;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1%;
+    gap: 15px;
   }
 
   .hard-fork {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
-    height: 4800px;
+    height: auto;
 
     .fork-item-list {
       ul li {
-        list-style-type: circle;
+        list-style-type: none;
       }
     }
+  }
+
+  .hard-fork-img {
+    height: 500px;
   }
 
   .latest-deals {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-    height: 1500px;
+    height: auto;
 
     .deals-img {
       width: 90px;

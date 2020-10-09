@@ -1,10 +1,10 @@
 .newsgrid {
   width: 93%;
-  height: 500px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2%;
+  gap: 15px;
   margin: 1% auto 0 auto;
 
   a {
