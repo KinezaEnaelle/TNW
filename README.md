@@ -44,8 +44,6 @@ To get a local copy up and running follow these simple example steps.
 - Open index.html file in any modern browser
 ### Run tests
 - Tests passed can be found here (https://github.com/KinezaEnaelle/TNW/pull/1)
-### Deployment
-- Page deployed through the Github pages service and can be viewed through the Live Demo Link (see above)
 
 
 ## Authors
