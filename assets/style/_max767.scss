@@ -95,16 +95,11 @@
   }
 
   .funding-nav {
-    //display: flex;
     flex-direction: column;
 
     .funding-nav-right {
       ul {
         display: flex;
-
-        li {
-          //border: none;
-        }
 
         .funding-link-right {
           padding-top: 0;
@@ -120,6 +115,18 @@
     gap: 15px;
   }
 
+  .funding-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .funding-nav-left {
+    display: block;
+  }
+  .funding-nav-right {
+    display: block;
+  }
   .hard-fork {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
