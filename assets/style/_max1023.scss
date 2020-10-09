@@ -6,15 +6,15 @@
   .fixed-min-logo {
     display: block;
     position: fixed;
-    width: 125px;
-    height: 80px;
+    width: 100px;
+    height: 50px;
     background: black;
     top: 0;
     left: 0;
     z-index: 99;
 
     p {
-      display: block;
+      display: none;
       color: white;
       position: absolute;
       top: 60px;
@@ -22,8 +22,8 @@
     }
 
     .header-logo-fixed {
-      width: 90px;
-      height: 70px;
+      width: 70px;
+      height: 50px;
       margin-left: 15px;
       margin-top: 15px;
     }
@@ -60,7 +60,7 @@
   }
 
   .funding-nav {
-    display: flex;
+    //display: flex;
     flex-direction: column;
   }
 
@@ -80,7 +80,7 @@
   .hard-fork {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
-    height: 2800px;
+    height: 2900px;
 
     .fork-item-list {
       ul li {

@@ -6,7 +6,7 @@
 
 > This project is part of Microverse HTML/CSS curriculum
 
-![screenshot](./images/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 The project is the sixth of the Microverse curriculum HTML/CSS module.
 This project is about cloning the Next Web Page using responsive design.
@@ -46,9 +46,6 @@ To get a local copy up and running follow these simple example steps.
 
 - Open index.html file in any modern browser
 
-### Run tests
-
-- Tests passed can be found here (https://github.com/KinezaEnaelle/TNW/pull/1)
 
 ## Authors
 

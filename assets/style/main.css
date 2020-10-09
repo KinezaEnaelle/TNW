@@ -785,8 +785,8 @@ small {
   .fixed-min-logo {
     display: block;
     position: fixed;
-    width: 125px;
-    height: 90px;
+    width: 100px;
+    height: 80px;
     background: black;
     top: 0;
     left: 0;
@@ -796,14 +796,15 @@ small {
     display: block;
     color: white;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 15px;
+    font-size: 10px;
   }
   .fixed-min-logo .header-logo-fixed {
-    width: 90px;
+    width: 75px;
     height: 70px;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .stickyheader .disappear {
     display: block;
@@ -860,22 +861,18 @@ small {
     margin-right: 15px;
   }
   .funding-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .funding-nav .funding-nav-right ul {
-    display: block;
-  }
-  .funding-nav .funding-nav-right ul li {
-    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .funding-nav .funding-nav-right ul .funding-link-right {
-    padding-top: 10px;
+    padding-top: 0;
   }
   .funding-grid {
     height: 1000px;
@@ -890,7 +887,7 @@ small {
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[9];
         grid-template-rows: repeat(9, 1fr);
-    height: 4300px;
+    height: 4800px;
   }
   .hard-fork .fork-item-list ul li {
     list-style-type: circle;
@@ -925,23 +922,23 @@ small {
   .fixed-min-logo {
     display: block;
     position: fixed;
-    width: 125px;
-    height: 80px;
+    width: 100px;
+    height: 50px;
     background: black;
     top: 0;
     left: 0;
     z-index: 99;
   }
   .fixed-min-logo p {
-    display: block;
+    display: none;
     color: white;
     position: absolute;
     top: 60px;
     left: 15px;
   }
   .fixed-min-logo .header-logo-fixed {
-    width: 90px;
-    height: 70px;
+    width: 70px;
+    height: 50px;
     margin-left: 15px;
     margin-top: 15px;
   }
@@ -970,9 +967,6 @@ small {
     margin: 1% auto 0 auto;
   }
   .funding-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -994,7 +988,7 @@ small {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
-    height: 2800px;
+    height: 2900px;
   }
   .hard-fork .fork-item-list ul li {
     list-style-type: circle;
