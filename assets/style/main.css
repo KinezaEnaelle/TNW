@@ -794,7 +794,10 @@ small {
   width: 46px;
   height: 17px;
   color: white;
-  margin-right: 5px;
+  margin-right: 3px;
+}
+
+.footer-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
