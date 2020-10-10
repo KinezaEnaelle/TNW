@@ -1063,6 +1063,7 @@ footer {
     -ms-grid-rows: (1fr)[9];
         grid-template-rows: repeat(9, 1fr);
     height: auto;
+    gap: 0;
   }
   .hard-fork .fork-item-list ul li {
     list-style-type: none;

@@ -144,6 +144,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     height: auto;
+    gap: 0;
 
     .fork-item-list {
       ul li {
