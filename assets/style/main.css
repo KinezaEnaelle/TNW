@@ -996,6 +996,25 @@ footer {
     display: block;
     font-weight: 800;
   }
+  .funding-nav-right {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .funding-nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+  }
+  .funding-nav-right ul li {
+    border-right: none !important;
+    font-weight: 400;
+  }
   .hard-fork {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1045,25 +1064,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .funding-nav-right {
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  .funding-nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 5px;
-  }
-  .funding-nav-right ul li {
-    border-right: none !important;
-    font-weight: 400;
   }
 }
 
