@@ -43,7 +43,19 @@
   font-weight: bolder;
 }
 
-small {
+.deals-bot {
+  display: flex;
+
+  em {
+    color: rgb(189, 178, 178);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 13px;
+  }
+}
+
+span {
+  font-weight: 500;
+  padding-left: 5px;
   color: gray;
-  font-weight: bold;
 }

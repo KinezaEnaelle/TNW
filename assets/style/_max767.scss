@@ -15,14 +15,14 @@
     display: block;
     position: fixed;
     width: 100px;
-    height: 50px;
+    height: 80px;
     background: black;
     top: 0;
     left: 0;
     z-index: 99;
 
     p {
-      display: none;
+      display: block;
       color: white;
       position: absolute;
       top: 50px;
@@ -80,8 +80,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0;
-    margin: 1% auto 0 auto;
+    gap: 15px;
+    margin: 30px auto 0 auto;
 
     figure {
       width: 100%;
@@ -133,10 +133,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 35px;
+
   }
 
   .funding-nav-left {
     display: block;
+    font-weight: 800;
   }
 
   .hard-fork {
@@ -162,8 +165,8 @@
     gap: 0;
 
     .deals-img {
-      width: 90px;
-      height: 90px;
+      width: 75px;
+      height: 75px;
       display: flex;
       margin-right: 10px;
     }
@@ -182,4 +185,21 @@
   .footer-bottom {
     flex-direction: column;
   }
+
+  .funding-nav-right {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+
+    ul {
+      display: flex;
+      gap: 5px;
+
+      li {
+        border-right: none !important;
+      }
+
+    }
+  }
+
 }
