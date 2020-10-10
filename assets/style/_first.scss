@@ -1,0 +1,125 @@
+.container {
+  width: 99%;
+  height: 540px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 7px;
+  margin: 5px auto 5px auto;
+}
+
+.first-container {
+  .logo {
+    width: 420px;
+    height: 100px;
+    margin: 20px 0 0 20px;
+  }
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: left;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/gender-pay-gap.png");
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+
+  p {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    bottom: 50px;
+    left: 20px;
+  }
+}
+
+.firstitemdate {
+  color: aliceblue;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-family: "Roboto", serif;
+}
+
+.first-container-item {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  font-family: "Roboto", serif;
+  color: white;
+
+  .item1 {
+    display: block;
+    font-size: 15px;
+    color: lightgray;
+    font-weight: bold;
+    padding-right: 10px;
+
+    .item2 {
+      display: block;
+      font-size: 55px;
+      color: lightgray;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+}
+
+.second-container {
+  display: block;
+  position: relative;
+  background-image: url("../images/tnw.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  p {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+.third-container {
+  display: block;
+  background-image: url("../images/lock.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  p {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+  }
+
+  .spanbottom {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 15px;
+  }
+
+  span {
+    display: inline-block;
+    padding-left: 10px;
+  }
+}

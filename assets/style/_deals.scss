@@ -1,0 +1,70 @@
+.latest-deals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 93%;
+  height: auto;
+  margin: 1% auto 1% auto;
+  gap: 15px;
+}
+
+span {
+  font-weight: 500;
+  padding-left: 5px;
+  color: gray;
+}
+
+.deals-image a {
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.latedeals-nav {
+  width: 93%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f42;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #f42;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.deals-item {
+  width: 100%;
+  height: auto;
+}
+
+.deals-img {
+  width: 100%;
+  height: auto;
+}
+
+.deals-bot {
+  display: flex;
+
+  em {
+    color: rgb(189, 178, 178);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 13px;
+  }
+}

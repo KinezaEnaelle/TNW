@@ -1,0 +1,130 @@
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  min-width: 350px;
+}
+
+.fixed-min-logo {
+  display: none;
+}
+
+.stickyheader {
+  width: 100%;
+  display: block;
+  background: white;
+  height: 50px;
+  padding: 0 15px 5px 0;
+  border-bottom: 2px solid rgb(235, 226, 226);
+  position: sticky;
+  top: 0;
+  z-index: 8;
+
+  .disappear {
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .stickylink {
+    color: #afa5a5;
+    text-decoration: none;
+    margin-right: 15px;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .stickyleft {
+    padding-top: 15px;
+    display: flex;
+    float: left;
+  }
+
+  .stickyright {
+    padding-top: 15px;
+    float: right;
+    color: lightgrey;
+    margin-top: 3px;
+    margin-left: 20px;
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+header {
+  width: 100%;
+
+  .navigation {
+    width: 100%;
+    display: block;
+    background: #131313;
+    align-items: center;
+    height: 33px;
+    padding: 5px 0 5px 20px;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .navbarlink {
+      color: #928989;
+      text-decoration: none;
+      margin-right: 15px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .navbar-left {
+      float: left;
+      margin-left: 0;
+      font-size: 14px;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+  }
+}
+
+.zover {
+  z-index: 7;
+}
+
+.fixed-min-logo-sticky {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: black;
+  z-index: 99;
+  margin-top: -15px;
+  margin-right: 15px;
+
+  p {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+
+  .header-logo-fixed {
+    width: 70px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,34 @@
+.fingerprint {
+  color: white;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: gray;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 77;
+}
+
+.invalid {
+  color: white;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: rgb(10, 43, 233);
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 77;
+
+  .iconify {
+    width: 28px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,36 @@
+.newsgrid {
+  width: 93%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin: 35px auto 0 auto;
+
+  a {
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0 0 1% 0;
+  }
+
+  small {
+    font-size: 13px;
+    color: grey;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.newslate-link {
+  width: 93%;
+  display: block;
+  color: #f42;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 35px auto 2% auto;
+}

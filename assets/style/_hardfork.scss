@@ -1,0 +1,171 @@
+.hard-fork {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 93%;
+  margin: 55px auto 0 auto;
+  gap: 20px;
+  height: auto;
+}
+
+.hard-fork-item {
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.hard-fork-img {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2px;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  small {
+    color: gray;
+  }
+}
+
+.bgr1 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/bitcoinmast.jpg");
+  background-size: cover;
+}
+
+.bgr2 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/trump.png");
+  background-size: cover;
+}
+
+.bgr3 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/table_lamp_200w_in-2-368x276.jpg");
+  background-size: cover;
+}
+
+.bgr4 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Snag_1385ac7a-368x276.png");
+  background-size: cover;
+}
+
+.bgr5 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Luca-car-hed.jpg");
+  background-size: cover;
+}
+
+.bgr6 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/IG-Reels-Audio.jpg");
+  background-size: cover;
+}
+
+.bgr7 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/data.jpg");
+  background-size: cover;
+}
+
+.bgr8 {
+  background:
+
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/company-culture-gq.png");
+  background-size: cover;
+}
+
+.bgr9 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/chinese.jpg");
+  background-size: cover;
+}
+
+.fork-item-middle {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(255, 244, 242);
+}
+
+.fork-middle-left {
+  padding-left: 15px;
+
+  p {
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fc806a;
+  }
+
+  a {
+    color: #f42;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.lower-image {
+  width: 95px;
+  height: 95px;
+}
+
+.hard-fork-head {
+  display: block;
+  font-size: 25px;
+  color: #f42;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.fork-item-list a {
+  color: grey;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.fork-item-list {
+  padding-left: 1%;
+
+  li {
+    border-bottom: 1px solid rgb(235, 222, 222);
+    padding: 15px;
+  }
+
+  li::before {
+    content: "•";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
