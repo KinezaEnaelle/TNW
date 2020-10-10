@@ -790,14 +790,20 @@ small {
   text-align: center;
 }
 
-.footer-logo {
+.footer-bottom img {
   width: 46px;
   height: 17px;
   color: white;
   margin-right: 3px;
 }
 
-.footer-center {
+.footer-bottom span {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.footer-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,6 +964,12 @@ small {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

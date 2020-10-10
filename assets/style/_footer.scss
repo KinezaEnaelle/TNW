@@ -59,15 +59,22 @@
     color: gray;
     text-align: center;
   }
+
+  img {
+    width: 46px;
+    height: 17px;
+    color: white;
+    margin-right: 3px;
+    //margin-top: 3px;
+  }
+
+  span {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+  }
 }
 
 .footer-logo {
-  width: 46px;
-  height: 17px;
-  color: white;
-  margin-right: 3px;
-}
-
-.footer-center {
   display: flex;
 }
