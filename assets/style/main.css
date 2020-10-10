@@ -23,7 +23,7 @@ body {
   display: block;
   background: white;
   height: 50px;
-  padding: 15px 15px 5px 20px;
+  padding: 0 15px 5px 0;
   border-bottom: 2px solid #ebe2e2;
   position: -webkit-sticky;
   position: sticky;
@@ -53,10 +53,15 @@ body {
 }
 
 .stickyheader .stickyleft {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
 }
 
 .stickyheader .stickyright {
+  padding-top: 15px;
   float: right;
   color: lightgrey;
   margin-top: 3px;
@@ -101,6 +106,8 @@ header .navigation .navbarlink:hover {
 
 header .navigation .navbar-left {
   float: left;
+  margin-left: 0;
+  font-size: 14px;
 }
 
 header .navigation .navbar-right {
@@ -109,6 +116,31 @@ header .navigation .navbar-right {
 
 .zover {
   z-index: 7;
+}
+
+.fixed-min-logo-sticky {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: black;
+  z-index: 99;
+  margin-top: -15px;
+  margin-right: 15px;
+}
+
+.fixed-min-logo-sticky p {
+  display: none;
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.fixed-min-logo-sticky .header-logo-fixed {
+  width: 70px;
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .container {
@@ -307,7 +339,7 @@ header .navigation .navbar-right {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 15px;
-  margin: 1% auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 
 .newsgrid a {
@@ -514,6 +546,7 @@ header .navigation .navbar-right {
 .hard-fork-item {
   width: 100%;
   height: auto;
+  padding-top: 15px;
 }
 
 .hard-fork-img {
@@ -688,7 +721,7 @@ span {
 
 .latedeals-nav {
   width: 93%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,9 +737,18 @@ span {
   margin-bottom: 20px;
 }
 
+.latedeals-nav a:hover {
+  color: black;
+}
+
 .latedeals-nav span {
   font-weight: 400;
   font-size: 15px;
+  color: #f42;
+}
+
+.latedeals-nav span:hover {
+  color: black;
 }
 
 .deals-item {
@@ -1069,8 +1111,21 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar-left {
-    margin-left: 120px;
-    font-size: 14px;
+    margin-left: 100px !important;
+    font-size: 12px !important;
+  }
+  .navigation {
+    padding-top: 7px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 12px;
+  }
+  .fixed-min-logo-sticky {
+    display: none;
   }
   .fixed-min-logo {
     display: block;
@@ -1117,7 +1172,6 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    margin: 1% auto 0 auto;
   }
   .funding-nav {
     display: -webkit-box;

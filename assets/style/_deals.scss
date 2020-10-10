@@ -16,7 +16,7 @@ span {
 
 .latedeals-nav {
   width: 93%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
 
@@ -25,11 +25,20 @@ span {
     font-weight: bold;
     color: #f42;
     margin-bottom: 20px;
+
+    &:hover {
+      color: black;
+    }
   }
 
   span {
     font-weight: 400;
     font-size: 15px;
+    color: #f42;
+
+    &:hover {
+      color: black;
+    }
   }
 }
 

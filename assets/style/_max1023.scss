@@ -1,8 +1,19 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar-left {
-    margin-left: 120px;
-    font-size: 14px;
+    margin-left: 100px !important;
+    font-size: 12px !important;
   }
+
+.navigation {
+  padding-top: 7px !important;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.fixed-min-logo-sticky {
+  display: none;
+}
 
   .fixed-min-logo {
     display: block;
@@ -57,7 +68,6 @@
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 1% auto 0 auto;
   }
 
   .funding-nav {
