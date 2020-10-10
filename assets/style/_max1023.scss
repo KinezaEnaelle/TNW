@@ -8,7 +8,7 @@
     display: block;
     position: fixed;
     width: 100px;
-    height: 50px;
+    height: 82px;
     background: black;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
       width: 70px;
       height: 50px;
       margin-left: 15px;
-      margin-top: 15px;
+      margin-top: 32px;
     }
   }
 
@@ -64,15 +64,14 @@
     display: flex;
     flex-direction: column;
   }
-    
+
   .funding-nav-right {
-
     padding-top: 10px;
-    .info {
-        padding-left: 0;
-      }
-  }
 
+    .info {
+      padding-left: 0;
+    }
+  }
 
   .funding-grid {
     grid-template-columns: 1fr 1fr 1fr;

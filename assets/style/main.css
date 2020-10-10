@@ -1028,7 +1028,7 @@ small {
     display: block;
     position: fixed;
     width: 100px;
-    height: 50px;
+    height: 82px;
     background: black;
     top: 0;
     left: 0;
@@ -1045,7 +1045,7 @@ small {
     width: 70px;
     height: 50px;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 32px;
   }
   .stickyheader .disappear {
     display: none;
