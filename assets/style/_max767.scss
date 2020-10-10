@@ -99,27 +99,9 @@
     border: none;
   }
 
-  .funding-nav-right {
-    display: block;
-
-    .see-more {
-      border-right: none;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-
-      li {
-        border-right: none;
-        font-weight: 400;
-      }
-
-      .funding-link-right {
-        padding-top: 0;
-        border: none;
-      }
-    }
+  .funding-link-right {
+    padding-top: 0;
+    border: none;
   }
 
   .funding-grid {
@@ -134,7 +116,6 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: 35px;
-
   }
 
   .funding-nav-left {
@@ -193,13 +174,13 @@
 
     ul {
       display: flex;
+      flex-direction: column;
       gap: 5px;
 
       li {
         border-right: none !important;
+        font-weight: 400;
       }
-
     }
   }
-
 }

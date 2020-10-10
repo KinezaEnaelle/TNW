@@ -680,6 +680,12 @@ header .navigation .navbar-right {
   gap: 15px;
 }
 
+span {
+  font-weight: 500;
+  padding-left: 5px;
+  color: gray;
+}
+
 .latedeals-nav {
   width: 93%;
   margin: 0 auto;
@@ -730,12 +736,6 @@ header .navigation .navbar-right {
   font-weight: 400;
   text-decoration: line-through;
   font-size: 13px;
-}
-
-span {
-  font-weight: 500;
-  padding-left: 5px;
-  color: gray;
 }
 
 footer {
@@ -967,26 +967,7 @@ footer {
   #noborder {
     border: none;
   }
-  .funding-nav-right {
-    display: block;
-  }
-  .funding-nav-right .see-more {
-    border-right: none;
-  }
-  .funding-nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .funding-nav-right ul li {
-    border-right: none;
-    font-weight: 400;
-  }
-  .funding-nav-right ul .funding-link-right {
+  .funding-link-right {
     padding-top: 0;
     border: none;
   }
@@ -1074,10 +1055,15 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 5px;
   }
   .funding-nav-right ul li {
     border-right: none !important;
+    font-weight: 400;
   }
 }
 
