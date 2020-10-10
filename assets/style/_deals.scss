@@ -8,9 +8,11 @@
   gap: 15px;
 }
 
-.deals-item {
-  width: 100%;
-  height: auto;
+.latedeals-nav {
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
   a {
     font-size: 25px;
@@ -18,6 +20,16 @@
     color: #f42;
     margin-bottom: 20px;
   }
+
+  span {
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
+.deals-item {
+  width: 100%;
+  height: auto;
 }
 
 .deals-img {

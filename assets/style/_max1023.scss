@@ -61,9 +61,18 @@
   }
 
   .funding-nav {
-    //display: flex;
+    display: flex;
     flex-direction: column;
   }
+    
+  .funding-nav-right {
+
+    padding-top: 10px;
+    .info {
+        padding-left: 0;
+      }
+  }
+
 
   .funding-grid {
     grid-template-columns: 1fr 1fr 1fr;

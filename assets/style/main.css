@@ -487,7 +487,12 @@ header .navigation .navbar-right {
 .funding-nav .funding-nav-right ul .funding-link-right {
   color: #f42;
   display: inline-block;
-  padding-right: 3px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.funding-nav .funding-nav-right ul .funding-link-right:hover {
+  color: black;
 }
 
 .hard-fork {
@@ -672,16 +677,32 @@ header .navigation .navbar-right {
   gap: 15px;
 }
 
-.deals-item {
-  width: 100%;
-  height: auto;
+.latedeals-nav {
+  width: 93%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.deals-item a {
+.latedeals-nav a {
   font-size: 25px;
   font-weight: bold;
   color: #f42;
   margin-bottom: 20px;
+}
+
+.latedeals-nav span {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.deals-item {
+  width: 100%;
+  height: auto;
 }
 
 .deals-img {
@@ -897,16 +918,31 @@ small {
     height: 70px;
     margin-right: 15px;
   }
+  #noborder {
+    border: none;
+  }
   .funding-nav-right {
     display: block;
+  }
+  .funding-nav-right .see-more {
+    border-right: none;
   }
   .funding-nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .funding-nav-right ul li {
+    border-right: none;
+    font-weight: 400;
   }
   .funding-nav-right ul .funding-link-right {
     padding-top: 0;
+    border: none;
   }
   .funding-grid {
     height: auto;
@@ -950,6 +986,7 @@ small {
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     height: auto;
+    gap: 0;
   }
   .latest-deals .deals-img {
     width: 90px;
@@ -958,6 +995,15 @@ small {
     display: -ms-flexbox;
     display: flex;
     margin-right: 10px;
+  }
+  .latest-deals .deals-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .latest-deals .deals-image {
     padding-top: 20px;
@@ -1026,10 +1072,19 @@ small {
     margin: 1% auto 0 auto;
   }
   .funding-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .funding-nav-right {
+    padding-top: 10px;
+  }
+  .funding-nav-right .info {
+    padding-left: 0;
   }
   .funding-grid {
     -ms-grid-columns: 1fr 1fr 1fr;

@@ -95,14 +95,29 @@
     }
   }
 
+#noborder {
+  border: none;
+}
+
   .funding-nav-right {
     display: block;
 
+    .see-more {
+      border-right: none;
+    }
+
     ul {
       display: flex;
+      flex-direction: column;
+
+      li {
+        border-right: none;
+        font-weight: 400;
+      }
 
       .funding-link-right {
         padding-top: 0;
+        border: none;
       }
     }
   }
@@ -144,12 +159,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     height: auto;
+    gap: 0;
 
     .deals-img {
       width: 90px;
       height: 90px;
       display: flex;
       margin-right: 10px;
+    }
+
+    .deals-text {
+      display: flex;
+      flex-direction: column;
     }
 
     .deals-image {
@@ -162,5 +183,3 @@
     flex-direction: column;
   }
 }
-
-
